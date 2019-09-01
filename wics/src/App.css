@@ -1,0 +1,266 @@
+.App {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Maven Pro', sans-serif;
+}
+
+/* Navbar Styles */
+
+.nav-icon {
+  font-size: 50px;
+  cursor: pointer;
+  top: 20px;
+  right: 45px;
+  position: absolute;
+  color: #ECFCF5;
+}
+
+.close-icon {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 50px; 
+  color: #818181;
+  cursor: pointer;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #25262A;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.sidebar-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.sidebar-content a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 60px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover, .sidebar a:focus, .sidebar i:hover {
+  color: #D5BAF1;
+  text-decoration: none;
+}
+
+/* Home Page */
+
+.home {
+  background: radial-gradient(circle farthest-side ,#387989, #25262A);
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+
+.home-sidebar {
+  position: absolute;
+  top: 38%;
+  right: 8%;
+  text-align: right;
+  margin-top: 30px;
+}
+
+.home-sidebar a {
+  text-decoration: none;
+  font-size: 25px;
+  padding: 3px;
+  color: #ECFCF5;
+  display: block;
+}
+
+.home-sidebar a:hover {
+  color: #D5BAF1;
+  text-decoration: none;
+
+}
+
+.home i:hover{
+    color: #D5BAF1;
+
+}
+
+.down-icon {
+  color: #ECFCF5;
+  font-size: 150px;
+  cursor: pointer;
+}
+
+.test {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+/*  border: 1px solid green;
+*/  text-align: center;
+}
+
+img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 35%;
+}
+
+/* About Section */
+.about {
+  background-color: white;
+  /*background: radial-gradient(circle farthest-side ,#387989, #25262A);*/
+  height: 100vh;
+  width: 100vw;
+}
+
+
+
+/*.about h1 {
+  font-weight: bold;
+  font-size: 100px;
+}*/
+
+.title {
+  padding: 100px;
+  padding-top: 120px;
+  margin: 40px;
+}
+
+.body {
+  margin: 0 auto;
+  text-align: left;
+  font-size: 40px;
+  padding: 100px;
+  height: 50%;
+  width: 70%;
+}
+
+.body span {
+  color: #130770;
+  font-weight: bold;
+}
+
+.transition {
+  margin-top: 10%;
+  text-align: left;
+}
+
+.typewriter h1 {
+  display: block;
+  float: left;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid #BF8BF5; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .1em; /* Adjust as needed */
+  font-size: 135px;
+  font-weight: bold;
+  text-align: center;
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 60% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #BF8BF5; }
+}
+
+
+
+/* Screen Responsiveness */
+@media screen and (max-height: 450px) {
+  .sidebar a {font-size: 20px}
+  .sidebar .close-icon {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+
+@media screen and (max-width: 992px) {
+  .home-sidebar {
+    visibility: hidden;
+  }
+
+  .down-icon {
+    font-size: 100px;
+  }
+
+  .typewriter h1  {
+    font-size: 4em;
+  }
+
+  .body{
+    font-size: 30px;
+    padding: 40px;
+  }
+
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 80% }
+  }
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+  img {
+    width: 60%;
+  }
+
+  .sidebar a {font-size: 20px}
+  .sidebar .close-icon {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+
+  .down-icon {
+    font-size: 50px;
+  }
+
+  .typewriter h1  {
+    font-size: 2em;
+  }
+  .body{
+    font-size: 10px;
+  }
+
+  .title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+  /*  border: 1px solid green;
+  */  text-align: center;
+  }
+}
