@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/wics/static/css/main.dc9454e6.chunk.css",
+    "main.js": "/wics/static/js/main.fd316d0c.chunk.js",
+    "main.js.map": "/wics/static/js/main.fd316d0c.chunk.js.map",
+    "runtime~main.js": "/wics/static/js/runtime~main.4f3144ea.js",
+    "runtime~main.js.map": "/wics/static/js/runtime~main.4f3144ea.js.map",
+    "static/css/2.266e55a5.chunk.css": "/wics/static/css/2.266e55a5.chunk.css",
+    "static/js/2.562d5930.chunk.js": "/wics/static/js/2.562d5930.chunk.js",
+    "static/js/2.562d5930.chunk.js.map": "/wics/static/js/2.562d5930.chunk.js.map",
+    "index.html": "/wics/index.html",
+    "precache-manifest.931f60f88026fa045933f7ab401d82b7.js": "/wics/precache-manifest.931f60f88026fa045933f7ab401d82b7.js",
+    "service-worker.js": "/wics/service-worker.js",
+    "static/css/2.266e55a5.chunk.css.map": "/wics/static/css/2.266e55a5.chunk.css.map",
+    "static/css/main.dc9454e6.chunk.css.map": "/wics/static/css/main.dc9454e6.chunk.css.map",
+    "static/media/wicsLogoDark.png": "/wics/static/media/wicsLogoDark.1467ea6b.png",
+    "static/media/wicsLogoLight.png": "/wics/static/media/wicsLogoLight.8ac5b4ad.png"
+  }
+}
